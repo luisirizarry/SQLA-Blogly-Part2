@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font for the body */
+}
+
+.page {
+    padding: 20px;
+}
+
+/* Common title styles */
+.page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* List styles */
+.users-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.user-item {
+    margin-bottom: 8px;
+}
+
+/* Link styles */
+.user-link,
+.go-back-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.user-link:hover,
+.go-back-link:hover {
+    text-decoration: underline;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    display: inline;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styles */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-user-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.add-user-button:hover {
+    background-color: #218838;
+}
+
+.save-button,
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.save-button:hover,
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Specific page styles */
+.user-profile-page,
+.edit-user-page,
+.create-user-page {
+    text-align: center; /* Centers content on profile pages */
+}
+
+.user-image {
+    max-width: 150px; /* Set a max width for the image */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 20px;
+}
+
+.user-details,
+.user-actions {
+    margin-bottom: 20px;
+}
+
+.user-name {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Action buttons styling */
+.form-actions {
+    margin-top: 15px;
+}
+
+.cancel-link {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #dc3545; /* Red color for cancel link */
+}
+
+.cancel-link:hover {
+    text-decoration: underline;
+}
