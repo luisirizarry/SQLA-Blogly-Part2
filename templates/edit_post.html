@@ -1,1 +1,19 @@
 {% extends "base.html" %}
+
+<div>
+    <h1>Edit Post</h1>
+    <form action="/users/{{post.user.id}}", method="POST">
+        <div>
+            <label for="title"></label>
+            <input type="text" name="title" id="" placeholder="{{post.title}}" required>    
+        </div>
+        <div>
+            <label for="content"></label>
+            <textarea type="text" rows="5" cols="30" name="content" id="" placeholder="{{post.content}}" required></textarea>    
+        </div>
+        <div class="form-actions">
+            <a class="cancel-link" href="/users/{{user.id}}">Cancel</a>
+            <button class="save-button" type="submit">Edit</button>
+        </div>
+    </form>
+</div>
