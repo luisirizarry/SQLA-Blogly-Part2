@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+{% block content %}
 <div>
     <h1>Add Post for {{ user.get_full_name() }}</h1>
     <form action="/users/{{ user.id }}/posts/new", method="POST">
@@ -17,3 +18,4 @@
         </div>
     </form>
 </div>
+{% endblock %}

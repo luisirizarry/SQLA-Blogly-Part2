@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 
+{% block content %}
 <div>
     <h1>Edit Post</h1>
-    <form action="/users/{{post.user.id}}", method="POST">
+    <form action="/posts/{{post.id}}/edit" method="POST">
         <div>
             <label for="title"></label>
             <input type="text" name="title" id="" placeholder="{{post.title}}" required>    
@@ -17,3 +18,4 @@
         </div>
     </form>
 </div>
+{% endblock %}

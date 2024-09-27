@@ -16,6 +16,10 @@ class User(db.Model):
     first_name = db.Column(db.String(50), nullable=False)
     last_name = db.Column(db.String(50), nullable=False)
     image_url = db.Column(db.String, nullable=False, default='https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png')
+
+    # In case a user gets delete, their posts will be deleted as well, 
+    # also if a post isnt tied to a user, it will be deleted
+    posts = db.relationship('Post', backref='user', cascade='all, delete-orphan')
     
     @classmethod
     def get_all_users(cls):
@@ -40,8 +44,6 @@ class Post(db.Model):
     content = db.Column(db.String, nullable=False)
     created_at = db.Column(db.DateTime, nullable=False, default=func.now())
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-
-    user = db.relationship('User', backref='posts')
 
     def __repr__(self):
         """Show info about post."""

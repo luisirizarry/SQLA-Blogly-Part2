@@ -24,9 +24,7 @@
                 </ul>
             </div>
         </div>
-        <form action="/users/{{ user.id }}/posts/new">
-            <button class="add-post-button">Add Post</button>
-        </form>
+        <a href="/users/{{ user.id }}/posts/new">Add Post</a>
         <a class="go-back-link" href="/users">Go Back</a>
     </div>
 {% endblock %}

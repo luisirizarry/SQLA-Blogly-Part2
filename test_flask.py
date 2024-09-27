@@ -21,7 +21,7 @@ class UserViewsTestCase(TestCase):
     """Tests for views for Users."""
 
     def setUp(self):
-        """Add sample pet."""
+        """Add sample user."""
 
         User.query.delete()
 
