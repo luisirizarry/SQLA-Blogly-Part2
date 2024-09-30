@@ -136,3 +136,68 @@ button {
 .cancel-link:hover {
     text-decoration: underline;
 }
+
+/* Post list styles */
+.post-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.post-item {
+    margin-bottom: 8px;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+/* Profile and Post Page Styles */
+.edit-post-page, .view-post-page, .add-post-page {
+    text-align: center;
+}
+
+.add-post-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.add-post-link:hover {
+    text-decoration: underline;
+}
+
+.post-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.edit-link {
+    color: #007bff;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+

@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="user-profile-page">
-        <img class="user-image" src="{{user.image_url}}" alt="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png">
+        <img class="user-image" src="{{user.image_url}}" alt="User Image">
         <div class="user-details">
             <h1 class="user-name">{{ user.get_full_name() }}</h1>
             <div class="user-actions">
@@ -15,16 +15,16 @@
             </div>
             <div class="user-posts">
                 <h2>Posts</h2>
-                <ul>
+                <ul class="post-list">
                     {% for post in user.posts %}
-                        <li>
-                            <a href="/users/{{ user.id }}/posts/{{ post.id }}">{{ post.title }}</a>
+                        <li class="post-item">
+                            <a href="/users/{{ user.id }}/posts/{{ post.id }}" class="post-link">{{ post.title }}</a>
                         </li>
                     {% endfor %}
                 </ul>
             </div>
         </div>
-        <a href="/users/{{ user.id }}/posts/new">Add Post</a>
+        <a href="/users/{{ user.id }}/posts/new" class="add-post-link">Add Post</a>
         <a class="go-back-link" href="/users">Go Back</a>
     </div>
 {% endblock %}
